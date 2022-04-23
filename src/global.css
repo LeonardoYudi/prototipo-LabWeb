@@ -15,6 +15,7 @@ header{
 
 main{
   height: 80vh;
+  max-height: auto;
 }
 
 footer{
