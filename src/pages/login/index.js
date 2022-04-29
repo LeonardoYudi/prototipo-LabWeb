@@ -20,10 +20,12 @@ function Login() {
   };
 
   const login = async (e) => {
+    
     e.preventDefault();
     const resp = await api.post("/users/login", userInput);
     localStorage.setItem("token", resp.data?.token);
     navigate("/pagina");
+    
   };
 
   return (

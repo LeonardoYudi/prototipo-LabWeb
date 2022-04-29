@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { MainPagina, Aside, Elementos, Right } from "./styles";
 import api from "../../services/api";
+import UserConfigs from "../UserConfigs";
+
+
 
 function Pagina() {
   const navigate = useNavigate();
@@ -47,8 +50,8 @@ function Pagina() {
     <MainPagina>
       <Aside>
         <Elementos>
-          <span className="start">Pefil</span>
-          <button>UserName</button>
+          <span className="start">Usuário</span>
+          <button>Perfil</button>
           <button className="sair" onClick={apagarConta}>
             Apagar conta
           </button>
@@ -62,8 +65,7 @@ function Pagina() {
         </Elementos>
       </Aside>
       <Right>
-        <h2>Você ainda não Adicionou um página</h2>
-        <button>Adicionar Pagina</button>
+        <UserConfigs/>
       </Right>
     </MainPagina>
   );

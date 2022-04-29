@@ -55,19 +55,5 @@ export const Elementos = styled.div`
 export const Right = styled.div`
     width: 83%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
-    button{
-        padding: 1rem;
-        border: none;
-        border-radius: 2rem;
-        font-weight: bold;
-    }
-
-    button:hover{
-        opacity: 0.7;
-        cursor: pointer;
-    }
 `

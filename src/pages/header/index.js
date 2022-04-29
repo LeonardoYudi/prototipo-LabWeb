@@ -19,9 +19,6 @@ function Header() {
           <button className="underline">Pagina</button>
         </Link>
 
-        <Link to="/recuperar">
-          <button className="underline">Recuperar</button>
-        </Link>
         <Link to="/cadastro">
           <button className="underline">Cadastrar</button>
         </Link>
