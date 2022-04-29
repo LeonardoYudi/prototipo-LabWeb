@@ -4,19 +4,17 @@ import { FaUserAlt } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import { useState } from "react";
 
-
-
-
+import api from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
 function Cadastro() {
-  
-  /*
-  import axios from "axios";
   const [userInput, setUserInput] = useState({
     email: "",
     senha: "",
     confirmarSenha: "",
   });
+
+  const navigate = useNavigate();
 
   const updateField = ({ target }) => {
     const input = { ...userInput };
@@ -31,17 +29,11 @@ function Cadastro() {
       return;
     }
 
-    const resp = await axios.post(
-      "https://api-planner.herokuapp.com/",
-      userInput,
-      { headers: { "Access-Control-Allow-Origin": "*" } }
-    );
-    alert(resp);
+    const resp = await api.post("/users/cadastros", userInput);
+    localStorage.setItem("token", resp.data?.token);
+    navigate("/pagina");
+  };
 
-    return;
-  };*/
-
-  /*
   return (
     <Container>
       <Centro>
@@ -98,7 +90,6 @@ function Cadastro() {
       </Centro>
     </Container>
   );
-  */
 }
 
 export default Cadastro;
