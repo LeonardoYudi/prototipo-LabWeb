@@ -1,8 +1,7 @@
 import {Centro, Container, Left, Right} from "./styles";
 import { Link } from "react-router-dom";
 import { FaUserAlt } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
-function Login(){
+function Recuperar(){
     return(
         <Container>
            <Centro>
@@ -11,27 +10,18 @@ function Login(){
                    <p>Para ter acesso aos nossos serviços efetue seu Login.</p>
                </Left>
                <Right>
-                   <h2>Login</h2>
-                   <h3>Entre usando e-mail e senha</h3>
+                   <h2>Recuperar Senha</h2>
+                   <h3>Digite seu Email</h3>
                    <form>
                        <label>Email</label>
                        <div className="input-label">
                             <FaUserAlt/>
                             <input type="email"></input>
                        </div>
-                       <label>Senha</label>
-                       <div className="input-label">
-                            <i><FaLock/></i>
-                            <input type="password"></input>
-                       </div>
-                        <div className="password">
-                            <button>Esqueceu sua senha ?</button>
-                        </div>
-                        <button className="login-btn">Login</button>
+                        <button className="login-btn">Enviar</button>
                    </form>
                    <div className="cadastrar">
-                    <p>Não possui conta ?</p>
-                    <Link to="/cadastro"><button className='underline'>Cadastrar-se</button></Link>
+                    <Link to="/"><button className='underline'>Voltar ao Início</button></Link>
                    </div>
                </Right>
            </Centro>
@@ -39,4 +29,4 @@ function Login(){
     )
 }
 
-export default Login;
+export default Recuperar;

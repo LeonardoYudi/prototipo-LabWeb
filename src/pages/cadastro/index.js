@@ -4,9 +4,14 @@ import { FaUserAlt } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import { useState } from "react";
 
-import axios from "axios";
+
+
+
 
 function Cadastro() {
+  
+  /*
+  import axios from "axios";
   const [userInput, setUserInput] = useState({
     email: "",
     senha: "",
@@ -34,8 +39,9 @@ function Cadastro() {
     alert(resp);
 
     return;
-  };
+  };*/
 
+  /*
   return (
     <Container>
       <Centro>
@@ -92,6 +98,7 @@ function Cadastro() {
       </Centro>
     </Container>
   );
+  */
 }
 
 export default Cadastro;

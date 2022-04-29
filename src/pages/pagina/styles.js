@@ -8,7 +8,7 @@ export const MainPagina = styled.main`
 
 export const Aside = styled.aside`
     width: 17%;
-    height: 100%;
+    height: 80vh;
     background-color: #101010;
 `
 
@@ -29,6 +29,7 @@ export const Elementos = styled.div`
         border: none;
         font-size: 1rem;
         text-align: start;
+        cursor: pointer;
     }
 
     button:hover{
@@ -45,9 +46,7 @@ export const Elementos = styled.div`
         align-self: flex-start;
         margin-left: 10%;
     }
-    .sair{
-        margin-top: 80%;
-    }
+   
     .sair:hover{
         background-color: #dc1c24;
     }

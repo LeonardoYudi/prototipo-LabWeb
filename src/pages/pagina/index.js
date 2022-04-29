@@ -7,6 +7,7 @@ function Pagina(){
               <Elementos>
                 <span className="start">Pefil</span>
                 <button>UserName</button>
+                <button className="sair">Apagar conta</button>
                 <span className="start">Conteúdo</span>
                 <button>Calendário</button>
                 <button>Add a Page</button>
