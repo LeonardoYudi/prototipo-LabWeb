@@ -4,8 +4,6 @@ import { MainPagina, Aside, Elementos, Right } from "./styles";
 import api from "../../services/api";
 import UserConfigs from "../UserConfigs";
 
-
-
 function Pagina() {
   const navigate = useNavigate();
 
